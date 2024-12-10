@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: "Prompt", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 150px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img:hover{
+    transition: .3s;
+    opacity: 50%;
+}
+.navbar {
+    display: flex;
+    list-style: none;
+}
+.navbar .menu-item a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar .menu-item a:not(.currentpage,.signup,.signin)::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #C80404;
+    transition: .3s;
+}
+.navbar .menu-item a:hover::before{
+    width: 100%;
+}
+.navbar .menu-item a.currentpage {
+    font-weight: bold;
+    color: #C80404;
+}
+.navbar .i-down {
+    width: 18px;
+    height: 18px;
+}
+.navbar a.signin {
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #C80404;
+}
+.navbar a.signin:hover {
+    border-radius: 4px;
+    color: black;
+    background-color:#f2ce00 ;
+}
+.navbar a.signup {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+.navbar a.signup:hover {
+  background-color: #C80404;
+  color: white;
+  border-radius: 4px;
+}
+
+.menu-item.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.menu-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.menu-item.dropdown .dropdown-menu li {
+  margin: 0;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+
+.menu-item.dropdown .dropdown-menu li a {
+  margin: 0;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-item.dropdown .dropdown-menu li a:hover {
+  background-color: #C80404;
+  color: white;
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+} 
