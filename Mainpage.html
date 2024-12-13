@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Style.css">
+    <script src="MainScript.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <img src="/WEBBEN_LogoFix.png" alt="WEBBEN_Logo" width="280" height="90" sizes="(max-width: 280) 100vx 260px ">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="/Mainpage.html" class="currentpage">หน้าหลัก</a></li>
+            <li class="dropdown">
+                <a href="#">ผลงาน<i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">ผลงานทางวิชาการ</a></li>
+                    <li><a href="#">ผลงานทางกีฬา</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </li>
+            <li><a href="#">เกี่ยวกับ</a></li>
+            <li><a href="#" class="signup" href="#">สมัครสมาชิก</a></li>
+            <li><a href="#" class="signin" href="#">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+    <div class="page-wrapper">
+
+        <div class="post-slider">
+            <h1 class="slider-title">Trending Posts</h1>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+
+            <div class="post-wrapper">
+                    <div class="post">
+                        <img src="Images/Rama5.png" alt="Rama5" class="slider-image">
+                        <div class="post-info">
+                            <h4><a href="#">Article Namne</a></h4>
+                            <i class="far fa-user">Admin</i> 
+                            &nbsp;
+                            <i class="far fa-calendar"> Dec 12, 2345</i>
+                        </div>
+                    </div>
+                    <div class="post">2</div>
+                    <div class="post">3</div>
+                    <div class="post">4</div>
+                    <div class="post">5</div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
